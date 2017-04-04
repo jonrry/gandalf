@@ -7,8 +7,34 @@
     <groupId>com.guthub.jonrry.gandalf</groupId>
     <artifactId>gandalf</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
 
+    <name>gandalf</name>
+    <url>http://gitlab.alibaba-inc.com/zongyue.xzy/professorX.git</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+
+    <!--子模块-->
+    <modules>
+        <module>gandalf-core</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!--guava的依赖-->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>14.0.1</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
 
     <!--编译机-->
